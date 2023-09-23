@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('/public/fonts/Nunito-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('/public/fonts/Nunito-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('/public/fonts/Nunito-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('/public/fonts/Nunito-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('/public/fonts/Nunito-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@layer base {
+    html, body {
+        font-family: 'Nunito', sans-serif;
+    }
+  }
+
+.table {
+   border-spacing: 0 15px;
+}
+
+.table tr {
+    border-radius: 20px;
+}
+
+tr td:nth-child(n+4) {
+    border-radius: 0 .625rem .625rem 0;
+}
+
+tr td:nth-child(1) {
+    border-radius: .625rem 0 0 .625rem;
+}
